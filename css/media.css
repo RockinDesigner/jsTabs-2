@@ -1,0 +1,16 @@
+@media all and (max-width: 768px){
+    .content-property {
+        flex-flow: column nowrap;
+    }
+    .left-content {
+        margin: 0 0 22px 0;
+        width: 100%;
+    }
+    .content-nav-tab {
+        display: flex;
+        justify-content: center;
+    }
+    .slick-nav-group li a img {
+        width: 60%;
+    }
+}
