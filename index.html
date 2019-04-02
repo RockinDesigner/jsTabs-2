@@ -2,233 +2,235 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>JsTabs</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/tabs.js"></script>
-    <main>
-        <div class="header-slick-nav">
-            <ul class="slick-nav-group" id="slick-line">
-                <li class="current_page_item">
-                  <a href="#content-tab-center">
-                    <img src="img/1.png" alt="tab-center">
-                  </a>
-              </li>
-                <li><a href="#content-tab-left"><img src="img/1.png"></a></li>
-                <li><a href="#content-tab-right"><img src="img/1.png"></a></li>
-            </ul>
-        </div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/tabs.js"></script>
+<main>
+    <div class="header-slick-nav">
+        <ul class="slick-nav-group" id="slick-line">
+            <li class="current_page_item" id="content-tab-center-menu">
+                <a href="#content-tab-center">
+                    <img alt="tab-center" src="img/1.png">
+                </a>
+            </li>
+            <li id="content-tab-left-menu">
+                <a href="#content-tab-left"><img alt="img" src="img/1.png"></a>
+            </li>
+            <li id="content-tab-right-menu">
+                <a href="#content-tab-right"><img alt="img" src="img/1.png"></a>
+            </li>
+        </ul>
+    </div>
 
-        <!--контент для ЦЕНТРАЛЬНОЙ вкладки верхнего таба-->
-        <div class="content tabs-content-item content-active" id="content-tab-center">
-            <div class="header-tab-content">
-                <div class="content-nav-tab">
-                    <ul class="content-nav-group">
-                        <li>
-                          <a class="opacity-tab-active" href="#first-1"><span>Особенности</span></a>
-                        </li>
-                        <li><a href="#second-1"><span>Характеристики</span></a></li>
-                        <li><a href="#third-1"><span>Функции</span></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content-property tabs-content-item active" id="first-1">
-                <div class="left-content">
-                    <h2>ГИПО-ОКСИ-1</h2>
-                    <div class="left-content-slider">
-                        <img class="left-content-slider-img" src="img/slide-image.jpg" alt="">
-                    </div>
-                </div>
-                <div class="right-content">
-                    <h2>Особенности</h2>
-                    <ul class="description-group">
-                        <li>Аппарат OXYTERRA − самый мощный на рынке</li>
-                        <li>Широкий спектр гипоксии-гипероксии</li>
-                        <li>Ручное и автоматическое управление</li>
-                        <li>Простой интерфейс</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content-property tabs-content-item" id="second-1">
-                <div class="left-content">
-                    <h2>ГИПО-ОКСИ-1</h2>
-                    <div class="left-content-slider">
-                        <img class="left-content-slider-img" src="img/slide-image.jpg" alt="">
-                    </div>
-                </div>
-                <div class="right-content">
-                    <h2>Особенности</h2>
-                    <ul class="description-group">
-                        <li>Красивый современный дизайн</li>
-                        <li>Экономичный в эксплуатации</li>
-                        <li>Не требуетособых условий(кроме розетки 220 вольт)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content-property tabs-content-item" id="third-1">
-                <div class="left-content">
-                    <h2>ГИПО-ОКСИ-1</h2>
-                    <div class="left-content-slider">
-                        <img class="left-content-slider-img" src="img/slide-image.jpg" alt="">
-                    </div>
-                </div>
-                <div class="right-content">
-                    <h2>Особенности</h2>
-                    <ul class="description-group">
-                        <li>Аппарат OXYTERRA − самый мощный на рынке</li>
-                        <li>Широкий спектр гипоксии-гипероксии</li>
-                        <li>Ручное и автоматическое управление</li>
-                        <li>Простой интерфейс</li>
-                        <li>Красивый современный дизайн</li>
-                        <li>Экономичный в эксплуатации</li>
-                        <li>Не требуетособых условий(кроме розетки 220 вольт)</li>
-                    </ul>
-                </div>
+    <!--контент для ЦЕНТРАЛЬНОЙ вкладки верхнего таба-->
+    <div class="content tabs-content-item content-active" id="content-tab-center">
+        <div class="header-tab-content">
+            <div class="content-nav-tab">
+                <ul class="content-nav-group">
+                    <li>
+                        <a class="opacity-tab-active" href="#first-1"><span>Особенности</span></a>
+                    </li>
+                    <li><a href="#second-1"><span>Характеристики</span></a></li>
+                    <li><a href="#third-1"><span>Функции</span></a></li>
+                </ul>
             </div>
         </div>
-
-        <!--контент для ЛЕВОЙ вкладки верхнего таба-->
-        <div class="content tabs-content-item content-active" id="content-tab-left">
-            <div class="header-tab-content">
-                <div class="content-nav-tab">
-                    <ul class="content-nav-group">
-                        <li>
-                          <a class="opacity-tab-active" href="#first-2"><span>Особенности</span></a>
-                        </li>
-                        <li><a href="#second-1"><span>Характеристики</span></a></li>
-                        <li><a href="#third-1"><span>Функции</span></a></li>
-                    </ul>
+        <div class="content-property tabs-content-item tabs-content-item-active" id="first-1">
+            <div class="left-content">
+                <h2>ГИПО-ОКСИ-1</h2>
+                <div class="left-content-slider">
+                    <img alt="" class="left-content-slider-img" src="img/slide-image.jpg">
                 </div>
             </div>
-            <div class="content-property tabs-content-item active" id="first-2">
-                <div class="left-content">
-                    <h2>CellAir Fusion®/Oxyterra®</h2>
-                    <div class="left-content-slider">
-                        <img class="left-content-slider-img" src="img/slide-image.jpg" alt="">
-                    </div>
-                </div>
-                <div class="right-content">
-                    <h2>Особенности</h2>
-                    <ul class="description-group">
-                        <li>Аппарат OXYTERRA − самый мощный на рынке</li>
-                        <li>Широкий спектр гипоксии-гипероксии</li>
-                        <li>Ручное и автоматическое управление</li>
-                        <li>Простой интерфейс</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content-property tabs-content-item" id="second-2">
-                <div class="left-content">
-                    <h2>CellAir Fusion®/Oxyterra®</h2>
-                    <div class="left-content-slider">
-                        <img class="left-content-slider-img" src="img/slide-image.jpg" alt="">
-                    </div>
-                </div>
-                <div class="right-content">
-                    <h2>Особенности</h2>
-                    <ul class="description-group">
-                        <li>Красивый современный дизайн</li>
-                        <li>Экономичный в эксплуатации</li>
-                        <li>Не требуетособых условий(кроме розетки 220 вольт)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content-property tabs-content-item" id="third-2">
-                <div class="left-content">
-                    <h2>CellAir Fusion®/Oxyterra®</h2>
-                    <div class="left-content-slider">
-                        <img class="left-content-slider-img" src="img/slide-image.jpg" alt="">
-                    </div>
-                </div>
-                <div class="right-content">
-                    <h2>Особенности</h2>
-                    <ul class="description-group">
-                        <li>Аппарат OXYTERRA − самый мощный на рынке</li>
-                        <li>Широкий спектр гипоксии-гипероксии</li>
-                        <li>Ручное и автоматическое управление</li>
-                        <li>Простой интерфейс</li>
-                        <li>Красивый современный дизайн</li>
-                        <li>Экономичный в эксплуатации</li>
-                        <li>Не требуетособых условий(кроме розетки 220 вольт)</li>
-                    </ul>
-                </div>
+            <div class="right-content">
+                <h2>Особенности</h2>
+                <ul class="description-group">
+                    <li>Аппарат OXYTERRA − самый мощный на рынке</li>
+                    <li>Широкий спектр гипоксии-гипероксии</li>
+                    <li>Ручное и автоматическое управление</li>
+                    <li>Простой интерфейс</li>
+                </ul>
             </div>
         </div>
-
-        <!--контент для ПРАВОЙ вкладки верхнего таба-->
-        <div class="content tabs-content-item content-active" id="content-tab-right">
-            <div class="header-tab-content">
-                <div class="content-nav-tab">
-                    <ul class="content-nav-group">
-                        <li>
-                          <a class="opacity-tab-active" href="#first-3"><span>Особенности</span></a>
-                        </li>
-                        <li><a href="#second-1"><span>Характеристики</span></a></li>
-                        <li><a href="#third-1"><span>Функции</span></a></li>
-                    </ul>
+        <div class="content-property tabs-content-item" id="second-1">
+            <div class="left-content">
+                <h2>ГИПО-ОКСИ-1</h2>
+                <div class="left-content-slider">
+                    <img alt="" class="left-content-slider-img" src="img/slide-image.jpg">
                 </div>
             </div>
-            <div class="content-property tabs-content-item active" id="first-3">
-                <div class="left-content">
-                    <h2>OXYTERRA PRO®</h2>
-                    <div class="left-content-slider">
-                        <img class="left-content-slider-img" src="img/slide-image.jpg" alt="">
-                    </div>
-                </div>
-                <div class="right-content">
-                    <h2>Особенности</h2>
-                    <ul class="description-group">
-                        <li>Аппарат OXYTERRA − самый мощный на рынке</li>
-                        <li>Широкий спектр гипоксии-гипероксии</li>
-                        <li>Ручное и автоматическое управление</li>
-                        <li>Простой интерфейс</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content-property tabs-content-item" id="second-3">
-                <div class="left-content">
-                    <h2>OXYTERRA PRO®</h2>
-                    <div class="left-content-slider">
-                        <img class="left-content-slider-img" src="img/slide-image.jpg" alt="">
-                    </div>
-                </div>
-                <div class="right-content">
-                    <h2>Особенности</h2>
-                    <ul class="description-group">
-                        <li>Красивый современный дизайн</li>
-                        <li>Экономичный в эксплуатации</li>
-                        <li>Не требуетособых условий(кроме розетки 220 вольт)</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content-property tabs-content-item" id="third-3">
-                <div class="left-content">
-                    <h2>OXYTERRA PRO®</h2>
-                    <div class="left-content-slider">
-                        <img class="left-content-slider-img" src="img/slide-image.jpg" alt="">
-                    </div>
-                </div>
-                <div class="right-content">
-                    <h2>Особенности</h2>
-                    <ul class="description-group">
-                        <li>Аппарат OXYTERRA − самый мощный на рынке</li>
-                        <li>Широкий спектр гипоксии-гипероксии</li>
-                        <li>Ручное и автоматическое управление</li>
-                        <li>Простой интерфейс</li>
-                        <li>Красивый современный дизайн</li>
-                        <li>Экономичный в эксплуатации</li>
-                        <li>Не требуетособых условий(кроме розетки 220 вольт)</li>
-                    </ul>
-                </div>
+            <div class="right-content">
+                <h2>Особенности</h2>
+                <ul class="description-group">
+                    <li>Красивый современный дизайн</li>
+                    <li>Экономичный в эксплуатации</li>
+                    <li>Не требуетособых условий(кроме розетки 220 вольт)</li>
+                </ul>
             </div>
         </div>
+        <div class="content-property tabs-content-item" id="third-1">
+            <div class="left-content">
+                <h2>ГИПО-ОКСИ-1</h2>
+                <div class="left-content-slider">
+                    <img alt="" class="left-content-slider-img" src="img/slide-image.jpg">
+                </div>
+            </div>
+            <div class="right-content">
+                <h2>Особенности</h2>
+                <ul class="description-group">
+                    <li>Аппарат OXYTERRA − самый мощный на рынке</li>
+                    <li>Широкий спектр гипоксии-гипероксии</li>
+                    <li>Ручное и автоматическое управление</li>
+                    <li>Простой интерфейс</li>
+                    <li>Красивый современный дизайн</li>
+                    <li>Экономичный в эксплуатации</li>
+                    <li>Не требуетособых условий(кроме розетки 220 вольт)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-    </main>
+    <!--контент для ЛЕВОЙ вкладки верхнего таба-->
+    <div class="content tabs-content-item" id="content-tab-left">
+        <div class="header-tab-content">
+            <div class="content-nav-tab">
+                <ul class="content-nav-group">
+                    <li>
+                        <a class="opacity-tab-active" href="#first-2"><span>Особенности</span></a>
+                    </li>
+                    <li><a href="#second-2"><span>Характеристики</span></a></li>
+                    <li><a href="#third-2"><span>Функции</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-property tabs-content-item tabs-content-item-active" id="first-2">
+            <div class="left-content">
+                <h2>ГИПО-ОКСИ-1</h2>
+                <div class="left-content-slider">
+                    <img alt="" class="left-content-slider-img" src="img/slide-image.jpg">
+                </div>
+            </div>
+            <div class="right-content">
+                <h2>Особенности</h2>
+                <ul class="description-group">
+                    <li>Аппарат OXYTERRA − самый мощный на рынке</li>
+                    <li>Широкий спектр гипоксии-гипероксии</li>
+                    <li>Ручное и автоматическое управление</li>
+                    <li>Простой интерфейс</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-property tabs-content-item" id="second-2">
+            <div class="left-content">
+                <h2>ГИПО-ОКСИ-1</h2>
+                <div class="left-content-slider">
+                    <img alt="" class="left-content-slider-img" src="img/slide-image.jpg">
+                </div>
+            </div>
+            <div class="right-content">
+                <h2>Особенности</h2>
+                <ul class="description-group">
+                    <li>Красивый современный дизайн</li>
+                    <li>Экономичный в эксплуатации</li>
+                    <li>Не требуетособых условий(кроме розетки 220 вольт)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-property tabs-content-item" id="third-2">
+            <div class="left-content">
+                <h2>ГИПО-ОКСИ-1</h2>
+                <div class="left-content-slider">
+                    <img alt="" class="left-content-slider-img" src="img/slide-image.jpg">
+                </div>
+            </div>
+            <div class="right-content">
+                <h2>Особенности</h2>
+                <ul class="description-group">
+                    <li>Аппарат OXYTERRA − самый мощный на рынке</li>
+                    <li>Широкий спектр гипоксии-гипероксии</li>
+                    <li>Ручное и автоматическое управление</li>
+                    <li>Простой интерфейс</li>
+                    <li>Красивый современный дизайн</li>
+                    <li>Экономичный в эксплуатации</li>
+                    <li>Не требуетособых условий(кроме розетки 220 вольт)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
+    <!--контент для ПРАВОЙ вкладки верхнего таба-->
+    <div class="content tabs-content-item" id="content-tab-right">
+        <div class="header-tab-content">
+            <div class="content-nav-tab">
+                <ul class="content-nav-group">
+                    <li>
+                        <a class="opacity-tab-active" href="#first-3"><span>Особенности</span></a>
+                    </li>
+                    <li><a href="#second-3"><span>Характеристики</span></a></li>
+                    <li><a href="#third-3"><span>Функции</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-property tabs-content-item tabs-content-item-active" id="first-3">
+            <div class="left-content">
+                <h2>ГИПО-ОКСИ-1</h2>
+                <div class="left-content-slider">
+                    <img alt="" class="left-content-slider-img" src="img/slide-image.jpg">
+                </div>
+            </div>
+            <div class="right-content">
+                <h2>Особенности</h2>
+                <ul class="description-group">
+                    <li>Аппарат OXYTERRA − самый мощный на рынке</li>
+                    <li>Широкий спектр гипоксии-гипероксии</li>
+                    <li>Ручное и автоматическое управление</li>
+                    <li>Простой интерфейс</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-property tabs-content-item" id="second-3">
+            <div class="left-content">
+                <h2>ГИПО-ОКСИ-1</h2>
+                <div class="left-content-slider">
+                    <img alt="" class="left-content-slider-img" src="img/slide-image.jpg">
+                </div>
+            </div>
+            <div class="right-content">
+                <h2>Особенности</h2>
+                <ul class="description-group">
+                    <li>Красивый современный дизайн</li>
+                    <li>Экономичный в эксплуатации</li>
+                    <li>Не требуетособых условий(кроме розетки 220 вольт)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-property tabs-content-item" id="third-3">
+            <div class="left-content">
+                <h2>ГИПО-ОКСИ-1</h2>
+                <div class="left-content-slider">
+                    <img alt="" class="left-content-slider-img" src="img/slide-image.jpg">
+                </div>
+            </div>
+            <div class="right-content">
+                <h2>Особенности</h2>
+                <ul class="description-group">
+                    <li>Аппарат OXYTERRA − самый мощный на рынке</li>
+                    <li>Широкий спектр гипоксии-гипероксии</li>
+                    <li>Ручное и автоматическое управление</li>
+                    <li>Простой интерфейс</li>
+                    <li>Красивый современный дизайн</li>
+                    <li>Экономичный в эксплуатации</li>
+                    <li>Не требуетособых условий(кроме розетки 220 вольт)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>

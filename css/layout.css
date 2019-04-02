@@ -1,8 +1,15 @@
 
+body {
+	padding: 30px 0;
+}
+
 a {
     text-decoration: none;
-
+	outline: none;
     color: inherit;
+}
+a:focus {
+	outline: none;
 }
 
 .header-slick-nav,
@@ -25,8 +32,6 @@ ul.slick-nav-group {
     justify-content: space-around;
 }
 ul.slick-nav-group li:first-child {
-  border: 1px solid red;
-
   order: 1;
 }
 ul.slick-nav-group li:nth-child(2) {
@@ -37,7 +42,7 @@ ul.slick-nav-group li:nth-child(3){
 }
 
 .content {
-    margin-top: 64px;
+    margin-top: 40px;
 }
 
 .content-nav-group {
@@ -85,7 +90,7 @@ ul.content-nav-group li a::before {
 .tabs-content-item {
     display: none;
 }
-.active {
+.tabs-content-item-active {
     display: flex;
 }
 .content-active {
@@ -113,8 +118,8 @@ ul.content-nav-group li a::before {
     width: 100%;
 }
 
-.right-content h2 {
-
+.right-content {
+	width: 360px;
 }
 .right-content h2:after {
     display: block;
